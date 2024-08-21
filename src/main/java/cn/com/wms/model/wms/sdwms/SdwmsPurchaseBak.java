@@ -2,6 +2,7 @@
 package cn.com.wms.model.wms.sdwms;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -9,7 +10,8 @@ import java.util.Date;
 
 
 @TableName("SDWMS_PURCHASE_BAK")
- public class SdwmsPurchaseBak implements Serializable {
+@Data
+public class SdwmsPurchaseBak implements Serializable {
     private static final long serialVersionUID = -424080309045633035L;
     private Integer freshflag;
     private String sheetid;
@@ -17,12 +19,12 @@ import java.util.Date;
     private Integer purFlag;
     private String goodsid;
     private String customid;
-       private String palletZone;
-       private String venderid;
-       private String refsheetid;
-       private Date sdate;
+    private String palletZone;
+    private String venderid;
+    private String refsheetid;
+    private Date sdate;
 
-    
+
     /*   9 */
     public boolean equals(Object o) {
         if (o == this) return true;
@@ -99,7 +101,7 @@ import java.util.Date;
 
     public int hashCode() {
         int PRIME = 59;
-        result = 1;
+        int result = 1;
         Object $freshflag = getFreshflag();
         result = result * 59 + (($freshflag == null) ? 43 : $freshflag.hashCode());
         Object $sheetid = getSheetid();
@@ -150,651 +152,312 @@ import java.util.Date;
         return "SdwmsPurchaseBak(freshflag=" + getFreshflag() + ", sheetid=" + getSheetid() + ", sheetType=" + getSheetType() + ", purFlag=" + getPurFlag() + ", goodsid=" + getGoodsid() + ", customid=" + getCustomid() + ", palletZone=" + getPalletZone() + ", venderid=" + getVenderid() + ", refsheetid=" + getRefsheetid() + ", sdate=" + getSdate() + ", checker=" + getChecker() + ", type=" + getType() + ", purDate=" + getPurDate() + ", validDate=" + getValidDate() + ", serialid=" + getSerialid() + ", pkcount=" + getPkcount() + ", qty=" + getQty() + ", cost=" + getCost() + ", taxRate=" + getTaxRate() + ", giftQty=" + getGiftQty() + ", notes=" + getNotes() + ", status=" + getStatus() + ")";
     }
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getFreshflag() {
         /*  92 */
         return this.freshflag;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setFreshflag(Integer freshflag) {
         /* 101 */
         this.freshflag = freshflag;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getSheetid() {
         /* 110 */
         return this.sheetid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setSheetid(String sheetid) {
         /* 119 */
         this.sheetid = sheetid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getSheetType() {
         /* 128 */
         return this.sheetType;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setSheetType(Integer sheetType) {
         /* 137 */
         this.sheetType = sheetType;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getPurFlag() {
         /* 146 */
         return this.purFlag;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setPurFlag(Integer purFlag) {
         /* 155 */
         this.purFlag = purFlag;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getGoodsid() {
         /* 164 */
         return this.goodsid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setGoodsid(String goodsid) {
         /* 173 */
         this.goodsid = goodsid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getCustomid() {
         /* 182 */
         return this.customid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setCustomid(String customid) {
         /* 191 */
         this.customid = customid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getPalletZone() {
         /* 200 */
         return this.palletZone;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setPalletZone(String palletZone) {
         /* 209 */
         this.palletZone = palletZone;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getVenderid() {
         /* 218 */
         return this.venderid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setVenderid(String venderid) {
         /* 227 */
         this.venderid = venderid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getRefsheetid() {
         /* 236 */
         return this.refsheetid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setRefsheetid(String refsheetid) {
         /* 245 */
         this.refsheetid = refsheetid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Date getSdate() {
         /* 254 */
         return this.sdate;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setSdate(Date sdate) {
         /* 263 */
         this.sdate = sdate;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getChecker() {
         /* 272 */
         return this.checker;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setChecker(String checker) {
         /* 281 */
         this.checker = checker;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getType() {
         /* 290 */
         return this.type;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setType(Integer type) {
         /* 299 */
         this.type = type;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Date getPurDate() {
         /* 308 */
         return this.purDate;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setPurDate(Date purDate) {
         /* 317 */
         this.purDate = purDate;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Date getValidDate() {
         /* 326 */
         return this.validDate;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setValidDate(Date validDate) {
         /* 335 */
         this.validDate = validDate;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getSerialid() {
         /* 344 */
         return this.serialid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setSerialid(Integer serialid) {
         /* 353 */
         this.serialid = serialid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public BigDecimal getPkcount() {
         /* 362 */
         return this.pkcount;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setPkcount(BigDecimal pkcount) {
         /* 371 */
         this.pkcount = pkcount;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public BigDecimal getQty() {
         /* 380 */
         return this.qty;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setQty(BigDecimal qty) {
         /* 389 */
         this.qty = qty;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public BigDecimal getCost() {
         /* 398 */
         return this.cost;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setCost(BigDecimal cost) {
         /* 407 */
         this.cost = cost;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public BigDecimal getTaxRate() {
         /* 416 */
         return this.taxRate;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setTaxRate(BigDecimal taxRate) {
         /* 425 */
         this.taxRate = taxRate;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public BigDecimal getGiftQty() {
         /* 434 */
         return this.giftQty;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setGiftQty(BigDecimal giftQty) {
         /* 443 */
         this.giftQty = giftQty;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getNotes() {
         /* 452 */
         return this.notes;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setNotes(String notes) {
         /* 461 */
         this.notes = notes;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getStatus() {
         /* 470 */
         return this.status;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setStatus(Integer status) {
         /* 479 */
         this.status = status;
-        
+
     }
 }
 

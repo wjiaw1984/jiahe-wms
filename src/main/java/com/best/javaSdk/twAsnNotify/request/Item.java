@@ -3,9 +3,11 @@ package com.best.javaSdk.twAsnNotify.request;
 import cn.com.wms.model.wms.sdwms.SdwmsPurchase;
 import cn.com.wms.model.wms.sdwms.SdwmsRet;
 import cn.com.wms.model.wms.sdwms.SdwmsRetration;
+import lombok.Data;
 
 import java.math.RoundingMode;
 
+@Data
 public class Item {
     private int lineNo;
     private String itemSkuCode;
@@ -280,7 +282,7 @@ public class Item {
 
     public int hashCode() {
         int PRIME = 59;
-        result = 1;
+        int result = 1;
         result = result * 59 + getLineNo();
         Object $itemSkuCode = getItemSkuCode();
         result = result * 59 + (($itemSkuCode == null) ? 43 : $itemSkuCode.hashCode());

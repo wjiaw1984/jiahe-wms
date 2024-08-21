@@ -2,17 +2,19 @@
 package cn.com.wms.model.wms.sdwms;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
 
 
 @TableName("SDWMS_SGROUP")
- public class SdwmsSgroup implements Serializable {
+@Data
+public class SdwmsSgroup implements Serializable {
     private static final long serialVersionUID = 2021372029428029188L;
-       private String sheetid;
-       private String sgroupid;
+    private String sheetid;
+    private String sgroupid;
 
-    
+
     /*   7 */
     public boolean equals(Object o) {
         if (o == this) return true;
@@ -42,7 +44,7 @@ import java.io.Serializable;
 
     public int hashCode() {
         int PRIME = 59;
-        result = 1;
+        int result = 1;
         Object $sheetid = getSheetid();
         result = result * 59 + (($sheetid == null) ? 43 : $sheetid.hashCode());
         Object $sgroupid = getSgroupid();
@@ -59,158 +61,74 @@ import java.io.Serializable;
         return "SdwmsSgroup(sheetid=" + getSheetid() + ", sgroupid=" + getSgroupid() + ", sgroupname=" + getSgroupname() + ", customid=" + getCustomid() + ", status=" + getStatus() + ")";
     }
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     public String getSheetid() {
         /*  39 */
         return this.sheetid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setSheetid(String sheetid) {
         /*  48 */
         this.sheetid = sheetid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getSgroupid() {
         /*  57 */
         return this.sgroupid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setSgroupid(String sgroupid) {
         /*  66 */
         this.sgroupid = sgroupid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getSgroupname() {
         /*  75 */
         return this.sgroupname;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setSgroupname(String sgroupname) {
         /*  84 */
         this.sgroupname = sgroupname;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getCustomid() {
         /*  93 */
         return this.customid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setCustomid(String customid) {
         /* 102 */
         this.customid = customid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getStatus() {
         /* 111 */
         return this.status;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setStatus(Integer status) {
         /* 120 */
         this.status = status;
-        
+
     }
 }
 

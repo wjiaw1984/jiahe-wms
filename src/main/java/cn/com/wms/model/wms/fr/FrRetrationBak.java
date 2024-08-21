@@ -2,6 +2,7 @@
 package cn.com.wms.model.wms.fr;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -9,7 +10,8 @@ import java.util.Date;
 
 
 @TableName("FR_RetRation_BAK")
- public class FrRetrationBak implements Serializable {
+@Data
+public class FrRetrationBak implements Serializable {
     private static final long serialVersionUID = -2603863766672433307L;
     private Integer freshFlag;
     private String sheetid;
@@ -74,7 +76,7 @@ import java.util.Date;
 
     public int hashCode() {
         int PRIME = 59;
-        result = 1;
+        int result = 1;
         Object $freshFlag = getFreshFlag();
         result = result * 59 + (($freshFlag == null) ? 43 : $freshFlag.hashCode());
         Object $sheetid = getSheetid();
@@ -111,448 +113,214 @@ import java.util.Date;
         return "FrRetrationBak(freshFlag=" + getFreshFlag() + ", sheetid=" + getSheetid() + ", shopid=" + getShopid() + ", goodsid=" + getGoodsid() + ", venderid=" + getVenderid() + ", taxRate=" + getTaxRate() + ", paytypeid=" + getPaytypeid() + ", cost=" + getCost() + ", promFlag=" + getPromFlag() + ", lotno=" + getLotno() + ", realQty=" + getRealQty() + ", badQty=" + getBadQty() + ", sdate=" + getSdate() + ", operator=" + getOperator() + ", productDate=" + getProductDate() + ")";
     }
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getFreshFlag() {
         /*  71 */
         return this.freshFlag;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setFreshFlag(Integer freshFlag) {
         /*  80 */
         this.freshFlag = freshFlag;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getSheetid() {
         /*  89 */
         return this.sheetid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setSheetid(String sheetid) {
         /*  98 */
         this.sheetid = sheetid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getShopid() {
         /* 107 */
         return this.shopid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setShopid(String shopid) {
         /* 116 */
         this.shopid = shopid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getGoodsid() {
         /* 125 */
         return this.goodsid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setGoodsid(String goodsid) {
         /* 134 */
         this.goodsid = goodsid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getVenderid() {
         /* 143 */
         return this.venderid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setVenderid(String venderid) {
         /* 152 */
         this.venderid = venderid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public BigDecimal getTaxRate() {
         /* 161 */
         return this.taxRate;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setTaxRate(BigDecimal taxRate) {
         /* 170 */
         this.taxRate = taxRate;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getPaytypeid() {
         /* 179 */
         return this.paytypeid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setPaytypeid(String paytypeid) {
         /* 188 */
         this.paytypeid = paytypeid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public BigDecimal getCost() {
         /* 197 */
         return this.cost;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setCost(BigDecimal cost) {
         /* 206 */
         this.cost = cost;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getPromFlag() {
         /* 215 */
         return this.promFlag;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setPromFlag(Integer promFlag) {
         /* 224 */
         this.promFlag = promFlag;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getLotno() {
         /* 233 */
         return this.lotno;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setLotno(Integer lotno) {
         /* 242 */
         this.lotno = lotno;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public BigDecimal getRealQty() {
         /* 251 */
         return this.realQty;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setRealQty(BigDecimal realQty) {
         /* 260 */
         this.realQty = realQty;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public BigDecimal getBadQty() {
         /* 269 */
         return this.badQty;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setBadQty(BigDecimal badQty) {
         /* 278 */
         this.badQty = badQty;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Date getSdate() {
         /* 287 */
         return this.sdate;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setSdate(Date sdate) {
         /* 296 */
         this.sdate = sdate;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getOperator() {
         /* 305 */
         return this.operator;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setOperator(String operator) {
         /* 314 */
         this.operator = operator;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Date getProductDate() {
         /* 323 */
         return this.productDate;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setProductDate(Date productDate) {
         /* 332 */
         this.productDate = productDate;
-        
+
     }
 }
 

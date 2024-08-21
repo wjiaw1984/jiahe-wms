@@ -2,19 +2,21 @@
 package cn.com.wms.model.wms.sdwms;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.Serializable;
 import java.util.Date;
 
 
 @TableName("SDWMS_PD_BAK")
- public class SdwmsPdBak implements Serializable {
+@Slf4j
+public class SdwmsPdBak implements Serializable {
     private static final long serialVersionUID = -8726309274167636430L;
-       private String sheetid;
-       private String customid;
-       private String palletZone;
+    private String sheetid;
+    private String customid;
+    private String palletZone;
 
-    
+
     /*   8 */
     public boolean equals(Object o) {
         if (o == this) return true;
@@ -49,7 +51,7 @@ import java.util.Date;
 
     public int hashCode() {
         int PRIME = 59;
-        result = 1;
+        int result = 1;
         Object $sheetid = getSheetid();
         result = result * 59 + (($sheetid == null) ? 43 : $sheetid.hashCode());
         Object $customid = getCustomid();
@@ -70,216 +72,102 @@ import java.util.Date;
         return "SdwmsPdBak(sheetid=" + getSheetid() + ", customid=" + getCustomid() + ", palletZone=" + getPalletZone() + ", pdtype=" + getPdtype() + ", goodsid=" + getGoodsid() + ", sdate=" + getSdate() + ", status=" + getStatus() + ")";
     }
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     public String getSheetid() {
         /*  46 */
         return this.sheetid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setSheetid(String sheetid) {
         /*  55 */
         this.sheetid = sheetid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getCustomid() {
         /*  64 */
         return this.customid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setCustomid(String customid) {
         /*  73 */
         this.customid = customid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getPalletZone() {
         /*  82 */
         return this.palletZone;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setPalletZone(String palletZone) {
         /*  91 */
         this.palletZone = palletZone;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getPdtype() {
         /* 100 */
         return this.pdtype;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setPdtype(Integer pdtype) {
         /* 109 */
         this.pdtype = pdtype;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getGoodsid() {
         /* 118 */
         return this.goodsid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setGoodsid(String goodsid) {
         /* 127 */
         this.goodsid = goodsid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Date getSdate() {
         /* 136 */
         return this.sdate;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setSdate(Date sdate) {
         /* 145 */
         this.sdate = sdate;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getStatus() {
         /* 154 */
         return this.status;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setStatus(Integer status) {
         /* 163 */
         this.status = status;
-        
+
     }
 }
 

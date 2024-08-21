@@ -2,6 +2,7 @@
 package cn.com.wms.model.wms.fr;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -9,7 +10,8 @@ import java.util.Date;
 
 
 @TableName("FR_StockUp_bak")
- public class FrStockupBak implements Serializable {
+@Data
+public class FrStockupBak implements Serializable {
     private static final long serialVersionUID = 1862268279550531097L;
     private Integer freshflag;
     private String wmsid;
@@ -55,7 +57,7 @@ import java.util.Date;
 
     public int hashCode() {
         int PRIME = 59;
-        result = 1;
+        int result = 1;
         Object $freshflag = getFreshflag();
         result = result * 59 + (($freshflag == null) ? 43 : $freshflag.hashCode());
         Object $wmsid = getWmsid();
@@ -80,274 +82,130 @@ import java.util.Date;
         return "FrStockupBak(freshflag=" + getFreshflag() + ", wmsid=" + getWmsid() + ", sdate=" + getSdate() + ", goodsid=" + getGoodsid() + ", qty=" + getQty() + ", badQty=" + getBadQty() + ", status=" + getStatus() + ", notes=" + getNotes() + ", operateDate=" + getOperateDate() + ")";
     }
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getFreshflag() {
         /*  53 */
         return this.freshflag;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setFreshflag(Integer freshflag) {
         /*  62 */
         this.freshflag = freshflag;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getWmsid() {
         /*  71 */
         return this.wmsid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setWmsid(String wmsid) {
         /*  80 */
         this.wmsid = wmsid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Date getSdate() {
         /*  89 */
         return this.sdate;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setSdate(Date sdate) {
         /*  98 */
         this.sdate = sdate;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getGoodsid() {
         /* 107 */
         return this.goodsid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setGoodsid(Integer goodsid) {
         /* 116 */
         this.goodsid = goodsid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public BigDecimal getQty() {
         /* 125 */
         return this.qty;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setQty(BigDecimal qty) {
         /* 134 */
         this.qty = qty;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public BigDecimal getBadQty() {
         /* 143 */
         return this.badQty;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setBadQty(BigDecimal badQty) {
         /* 152 */
         this.badQty = badQty;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getStatus() {
         /* 161 */
         return this.status;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setStatus(Integer status) {
         /* 170 */
         this.status = status;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getNotes() {
         /* 179 */
         return this.notes;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setNotes(String notes) {
         /* 188 */
         this.notes = notes;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Date getOperateDate() {
         /* 197 */
         return this.operateDate;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setOperateDate(Date operateDate) {
         /* 206 */
         this.operateDate = operateDate;
-        
+
     }
 }
 

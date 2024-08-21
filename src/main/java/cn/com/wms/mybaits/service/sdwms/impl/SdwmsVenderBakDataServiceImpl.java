@@ -3,12 +3,13 @@
  import cn.com.wms.mybaits.dao.wms.sdwms.ISdwmsVenderBakDao;
  import cn.com.wms.mybaits.service.sdwms.ISdwmsVenderBakDataService;
  import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+ import lombok.extern.slf4j.Slf4j;
  import org.slf4j.Logger;
  import org.springframework.stereotype.Component;
 
  @Component
+ @Slf4j
  public class SdwmsVenderBakDataServiceImpl extends ServiceImpl<ISdwmsVenderBakDao, SdwmsVenderBak> implements ISdwmsVenderBakDataService {
-/* 11 */   private static final Logger log = LoggerFactory.getLogger(cn.com.wms.mybaits.service.sdwms.impl.SdwmsVenderBakDataServiceImpl.class);
  }
 
 

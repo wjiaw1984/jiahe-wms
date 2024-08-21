@@ -2,19 +2,21 @@
 package cn.com.wms.model.wms.fr;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.util.Date;
 
 
 @TableName("FR_UpNoteBak")
- public class FrUpnotebak implements Serializable {
+@Data
+public class FrUpnotebak implements Serializable {
     private static final long serialVersionUID = -2038900693103920072L;
-       private Integer id;
-       private String sheetid;
-       private Integer sheetType;
+    private Integer id;
+    private String sheetid;
+    private Integer sheetType;
 
-    
+
     /*   8 */
     public boolean equals(Object o) {
         if (o == this) return true;
@@ -54,7 +56,7 @@ import java.util.Date;
 
     public int hashCode() {
         int PRIME = 59;
-        result = 1;
+        int result = 1;
         Object $id = getId();
         result = result * 59 + (($id == null) ? 43 : $id.hashCode());
         Object $sheetid = getSheetid();
@@ -77,245 +79,116 @@ import java.util.Date;
         return "FrUpnotebak(id=" + getId() + ", sheetid=" + getSheetid() + ", sheetType=" + getSheetType() + ", sendShop=" + getSendShop() + ", receiveShop=" + getReceiveShop() + ", noteTime=" + getNoteTime() + ", handleTime=" + getHandleTime() + ", flag=" + getFlag() + ")";
     }
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getId() {
         /*  49 */
         return this.id;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setId(Integer id) {
         /*  58 */
         this.id = id;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getSheetid() {
         /*  67 */
         return this.sheetid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setSheetid(String sheetid) {
         /*  76 */
         this.sheetid = sheetid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getSheetType() {
         /*  85 */
         return this.sheetType;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setSheetType(Integer sheetType) {
         /*  94 */
         this.sheetType = sheetType;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getSendShop() {
         /* 103 */
         return this.sendShop;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setSendShop(String sendShop) {
         /* 112 */
         this.sendShop = sendShop;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getReceiveShop() {
         /* 121 */
         return this.receiveShop;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setReceiveShop(String receiveShop) {
         /* 130 */
         this.receiveShop = receiveShop;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Date getNoteTime() {
         /* 139 */
         return this.noteTime;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setNoteTime(Date noteTime) {
         /* 148 */
         this.noteTime = noteTime;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Date getHandleTime() {
         /* 157 */
         return this.handleTime;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setHandleTime(Date handleTime) {
         /* 166 */
         this.handleTime = handleTime;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getFlag() {
         /* 175 */
         return this.flag;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setFlag(Integer flag) {
         /* 184 */
         this.flag = flag;
-        
+
     }
 }
 

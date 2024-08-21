@@ -2,6 +2,7 @@
 package cn.com.wms.model.wms.sdwms;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -9,15 +10,16 @@ import java.util.Date;
 
 
 @TableName("SDwms_ChangeCost")
- public class SdwmsChangecost implements Serializable {
+@Data
+public class SdwmsChangecost implements Serializable {
     private static final long serialVersionUID = 8361279616692067165L;
     private Integer freshflag;
-       private String sheetid;
-       private String customid;
-       private String palletZone;
-       private String goodsid;
+    private String sheetid;
+    private String customid;
+    private String palletZone;
+    private String goodsid;
 
-    
+
     /*   9 */
     public boolean equals(Object o) {
         if (o == this) return true;
@@ -63,7 +65,7 @@ import java.util.Date;
 
     public int hashCode() {
         int PRIME = 59;
-        result = 1;
+        int result = 1;
         Object $freshflag = getFreshflag();
         result = result * 59 + (($freshflag == null) ? 43 : $freshflag.hashCode());
         Object $sheetid = getSheetid();
@@ -92,332 +94,158 @@ import java.util.Date;
         return "SdwmsChangecost(freshflag=" + getFreshflag() + ", sheetid=" + getSheetid() + ", customid=" + getCustomid() + ", palletZone=" + getPalletZone() + ", goodsid=" + getGoodsid() + ", venderid=" + getVenderid() + ", lotno=" + getLotno() + ", cost=" + getCost() + ", notes=" + getNotes() + ", status=" + getStatus() + ", operateDate=" + getOperateDate() + ")";
     }
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getFreshflag() {
         /*  59 */
         return this.freshflag;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setFreshflag(Integer freshflag) {
         /*  68 */
         this.freshflag = freshflag;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getSheetid() {
         /*  77 */
         return this.sheetid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setSheetid(String sheetid) {
         /*  86 */
         this.sheetid = sheetid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getCustomid() {
         /*  95 */
         return this.customid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setCustomid(String customid) {
         /* 104 */
         this.customid = customid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getPalletZone() {
         /* 113 */
         return this.palletZone;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setPalletZone(String palletZone) {
         /* 122 */
         this.palletZone = palletZone;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getGoodsid() {
         /* 131 */
         return this.goodsid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setGoodsid(String goodsid) {
         /* 140 */
         this.goodsid = goodsid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getVenderid() {
         /* 149 */
         return this.venderid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setVenderid(String venderid) {
         /* 158 */
         this.venderid = venderid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getLotno() {
         /* 167 */
         return this.lotno;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setLotno(Integer lotno) {
         /* 176 */
         this.lotno = lotno;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public BigDecimal getCost() {
         /* 185 */
         return this.cost;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setCost(BigDecimal cost) {
         /* 194 */
         this.cost = cost;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getNotes() {
         /* 203 */
         return this.notes;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setNotes(String notes) {
         /* 212 */
         this.notes = notes;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getStatus() {
         /* 221 */
         return this.status;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setStatus(Integer status) {
         /* 230 */
         this.status = status;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Date getOperateDate() {
         /* 239 */
         return this.operateDate;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setOperateDate(Date operateDate) {
         /* 248 */
         this.operateDate = operateDate;
-        
+
     }
 }
 

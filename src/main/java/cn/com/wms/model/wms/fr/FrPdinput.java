@@ -2,6 +2,7 @@
 package cn.com.wms.model.wms.fr;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -9,6 +10,7 @@ import java.util.Date;
 
 
 @TableName("FR_PDInPut")
+@Data
 public class FrPdinput implements Serializable {
     private static final long serialVersionUID = 4764971977607543935L;
     private Integer freshFlag;
@@ -53,7 +55,7 @@ public class FrPdinput implements Serializable {
 
     public int hashCode() {
         int PRIME = 59;
-        result = 1;
+        int result = 1;
         Object $freshFlag = getFreshFlag();
         result = result * 59 + (($freshFlag == null) ? 43 : $freshFlag.hashCode());
         Object $sheetid = getSheetid();

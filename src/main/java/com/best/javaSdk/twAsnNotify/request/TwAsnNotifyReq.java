@@ -8,11 +8,14 @@ import com.best.javaSdk.BaseRequest;
 import com.best.javaSdk.BaseResponse;
 import com.best.javaSdk.Parser;
 import com.best.javaSdk.twAsnNotify.response.TwAsnNotifyRsp;
+import lombok.Data;
+import org.springframework.util.CollectionUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Data
 public class TwAsnNotifyReq implements BaseRequest {
     private String operationFlag;
     private String customerCode;
@@ -205,7 +208,7 @@ public class TwAsnNotifyReq implements BaseRequest {
 
     public int hashCode() {
         int PRIME = 59;
-        result = 1;
+        int result = 1;
         Object $operationFlag = getOperationFlag();
         result = result * 59 + (($operationFlag == null) ? 43 : $operationFlag.hashCode());
         Object $customerCode = getCustomerCode();

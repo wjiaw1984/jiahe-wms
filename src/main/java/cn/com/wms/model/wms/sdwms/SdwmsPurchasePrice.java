@@ -2,13 +2,15 @@
 package cn.com.wms.model.wms.sdwms;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
 
 @TableName("SDwms_Purchase_Price")
- public class SdwmsPurchasePrice implements Serializable {
+@Slf4j
+public class SdwmsPurchasePrice implements Serializable {
     private static final long serialVersionUID = -5993431017401973926L;
     private String sheetid;
     private String customid;
@@ -57,7 +59,7 @@ import java.math.BigDecimal;
 
     public int hashCode() {
         int PRIME = 59;
-        result = 1;
+        int result = 1;
         Object $sheetid = getSheetid();
         result = result * 59 + (($sheetid == null) ? 43 : $sheetid.hashCode());
         Object $customid = getCustomid();
@@ -84,303 +86,144 @@ import java.math.BigDecimal;
         return "SdwmsPurchasePrice(sheetid=" + getSheetid() + ", customid=" + getCustomid() + ", goodsid=" + getGoodsid() + ", venderid=" + getVenderid() + ", shopid=" + getShopid() + ", cost=" + getCost() + ", taxRate=" + getTaxRate() + ", clearFlag=" + getClearFlag() + ", flag=" + getFlag() + ", status=" + getStatus() + ")";
     }
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     public String getSheetid() {
         /*  55 */
         return this.sheetid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setSheetid(String sheetid) {
         /*  64 */
         this.sheetid = sheetid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getCustomid() {
         /*  73 */
         return this.customid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setCustomid(String customid) {
         /*  82 */
         this.customid = customid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getGoodsid() {
         /*  91 */
         return this.goodsid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setGoodsid(String goodsid) {
         /* 100 */
         this.goodsid = goodsid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getVenderid() {
         /* 109 */
         return this.venderid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setVenderid(String venderid) {
         /* 118 */
         this.venderid = venderid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getShopid() {
         /* 127 */
         return this.shopid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setShopid(String shopid) {
         /* 136 */
         this.shopid = shopid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public BigDecimal getCost() {
         /* 145 */
         return this.cost;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setCost(BigDecimal cost) {
         /* 154 */
         this.cost = cost;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public BigDecimal getTaxRate() {
         /* 163 */
         return this.taxRate;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setTaxRate(BigDecimal taxRate) {
         /* 172 */
         this.taxRate = taxRate;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getClearFlag() {
         /* 181 */
         return this.clearFlag;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setClearFlag(Integer clearFlag) {
         /* 190 */
         this.clearFlag = clearFlag;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getFlag() {
         /* 199 */
         return this.flag;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setFlag(Integer flag) {
         /* 208 */
         this.flag = flag;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getStatus() {
         /* 217 */
         return this.status;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setStatus(Integer status) {
         /* 226 */
         this.status = status;
-        
+
     }
 }
 

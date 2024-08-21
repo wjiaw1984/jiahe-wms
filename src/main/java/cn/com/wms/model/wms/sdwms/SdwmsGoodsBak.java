@@ -2,13 +2,15 @@
 package cn.com.wms.model.wms.sdwms;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 
 
 @TableName("SDWMS_Goods_BAK")
- public class SdwmsGoodsBak implements Serializable {
+@Data
+public class SdwmsGoodsBak implements Serializable {
     private static final long serialVersionUID = -3094308926488151600L;
     private String sheetid;
     private String goodsid;
@@ -103,7 +105,7 @@ import java.math.BigDecimal;
 
     public int hashCode() {
         int PRIME = 59;
-        result = 1;
+        int result = 1;
         Object $sheetid = getSheetid();
         result = result * 59 + (($sheetid == null) ? 43 : $sheetid.hashCode());
         Object $goodsid = getGoodsid();
@@ -160,738 +162,354 @@ import java.math.BigDecimal;
         return "SdwmsGoodsBak(sheetid=" + getSheetid() + ", goodsid=" + getGoodsid() + ", sgroupid=" + getSgroupid() + ", customid=" + getCustomid() + ", barcodeid=" + getBarcodeid() + ", name=" + getName() + ", ename=" + getEname() + ", abcid=" + getAbcid() + ", unitName=" + getUnitName() + ", spec=" + getSpec() + ", pkname=" + getPkname() + ", pknum=" + getPknum() + ", pkspec=" + getPkspec() + ", zbnum=" + getZbnum() + ", length=" + getLength() + ", width=" + getWidth() + ", height=" + getHeight() + ", weigth=" + getWeigth() + ", keepDays=" + getKeepDays() + ", price=" + getPrice() + ", supno=" + getSupno() + ", notes=" + getNotes() + ", status=" + getStatus() + ", freshflag=" + getFreshflag() + ", freshDays=" + getFreshDays() + ")";
     }
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     public String getSheetid() {
         /* 100 */
         return this.sheetid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setSheetid(String sheetid) {
         /* 109 */
         this.sheetid = sheetid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getGoodsid() {
         /* 118 */
         return this.goodsid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setGoodsid(String goodsid) {
         /* 127 */
         this.goodsid = goodsid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getSgroupid() {
         /* 136 */
         return this.sgroupid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setSgroupid(String sgroupid) {
         /* 145 */
         this.sgroupid = sgroupid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getCustomid() {
         /* 154 */
         return this.customid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setCustomid(String customid) {
         /* 163 */
         this.customid = customid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getBarcodeid() {
         /* 172 */
         return this.barcodeid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setBarcodeid(String barcodeid) {
         /* 181 */
         this.barcodeid = barcodeid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getName() {
         /* 190 */
         return this.name;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setName(String name) {
         /* 199 */
         this.name = name;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getEname() {
         /* 208 */
         return this.ename;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setEname(String ename) {
         /* 217 */
         this.ename = ename;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getAbcid() {
         /* 226 */
         return this.abcid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setAbcid(String abcid) {
         /* 235 */
         this.abcid = abcid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getUnitName() {
         /* 244 */
         return this.unitName;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setUnitName(String unitName) {
         /* 253 */
         this.unitName = unitName;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getSpec() {
         /* 262 */
         return this.spec;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setSpec(String spec) {
         /* 271 */
         this.spec = spec;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getPkname() {
         /* 280 */
         return this.pkname;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setPkname(String pkname) {
         /* 289 */
         this.pkname = pkname;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public BigDecimal getPknum() {
         /* 298 */
         return this.pknum;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setPknum(BigDecimal pknum) {
         /* 307 */
         this.pknum = pknum;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getPkspec() {
         /* 316 */
         return this.pkspec;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setPkspec(String pkspec) {
         /* 325 */
         this.pkspec = pkspec;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public BigDecimal getZbnum() {
         /* 334 */
         return this.zbnum;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setZbnum(BigDecimal zbnum) {
         /* 343 */
         this.zbnum = zbnum;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public BigDecimal getLength() {
         /* 352 */
         return this.length;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setLength(BigDecimal length) {
         /* 361 */
         this.length = length;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public BigDecimal getWidth() {
         /* 370 */
         return this.width;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setWidth(BigDecimal width) {
         /* 379 */
         this.width = width;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public BigDecimal getHeight() {
         /* 388 */
         return this.height;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setHeight(BigDecimal height) {
         /* 397 */
         this.height = height;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public BigDecimal getWeigth() {
         /* 406 */
         return this.weigth;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setWeigth(BigDecimal weigth) {
         /* 415 */
         this.weigth = weigth;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getKeepDays() {
         /* 424 */
         return this.keepDays;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setKeepDays(Integer keepDays) {
         /* 433 */
         this.keepDays = keepDays;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public BigDecimal getPrice() {
         /* 442 */
         return this.price;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setPrice(BigDecimal price) {
         /* 451 */
         this.price = price;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getSupno() {
         /* 460 */
         return this.supno;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setSupno(String supno) {
         /* 469 */
         this.supno = supno;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getNotes() {
         /* 478 */
         return this.notes;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setNotes(String notes) {
         /* 487 */
         this.notes = notes;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getStatus() {
         /* 496 */
         return this.status;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setStatus(Integer status) {
         /* 505 */
         this.status = status;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getFreshflag() {
         /* 514 */
         return this.freshflag;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setFreshflag(Integer freshflag) {
         /* 523 */
         this.freshflag = freshflag;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getFreshDays() {
         /* 532 */
         return this.freshDays;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setFreshDays(Integer freshDays) {
         /* 541 */
         this.freshDays = freshDays;
-        
+
     }
 }
 

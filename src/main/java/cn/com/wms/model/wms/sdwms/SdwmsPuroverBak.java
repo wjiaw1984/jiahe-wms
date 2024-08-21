@@ -2,19 +2,21 @@
 package cn.com.wms.model.wms.sdwms;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.util.Date;
 
 
 @TableName("SDWMS_PurOver_BAK")
- public class SdwmsPuroverBak implements Serializable {
+@Data
+public class SdwmsPuroverBak implements Serializable {
     private static final long serialVersionUID = 609453100889549140L;
-       private String sheetid;
-       private String customid;
-       private String pursheetid;
+    private String sheetid;
+    private String customid;
+    private String pursheetid;
 
-    
+
     /*   8 */
     public boolean equals(Object o) {
         if (o == this) return true;
@@ -49,7 +51,7 @@ import java.util.Date;
 
     public int hashCode() {
         int PRIME = 59;
-        result = 1;
+        int result = 1;
         Object $sheetid = getSheetid();
         result = result * 59 + (($sheetid == null) ? 43 : $sheetid.hashCode());
         Object $customid = getCustomid();
@@ -70,216 +72,102 @@ import java.util.Date;
         return "SdwmsPuroverBak(sheetid=" + getSheetid() + ", customid=" + getCustomid() + ", pursheetid=" + getPursheetid() + ", flag=" + getFlag() + ", purdate=" + getPurdate() + ", status=" + getStatus() + ", freshflag=" + getFreshflag() + ")";
     }
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     public String getSheetid() {
         /*  46 */
         return this.sheetid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setSheetid(String sheetid) {
         /*  55 */
         this.sheetid = sheetid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getCustomid() {
         /*  64 */
         return this.customid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setCustomid(String customid) {
         /*  73 */
         this.customid = customid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getPursheetid() {
         /*  82 */
         return this.pursheetid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setPursheetid(String pursheetid) {
         /*  91 */
         this.pursheetid = pursheetid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getFlag() {
         /* 100 */
         return this.flag;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setFlag(Integer flag) {
         /* 109 */
         this.flag = flag;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Date getPurdate() {
         /* 118 */
         return this.purdate;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setPurdate(Date purdate) {
         /* 127 */
         this.purdate = purdate;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getStatus() {
         /* 136 */
         return this.status;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setStatus(Integer status) {
         /* 145 */
         this.status = status;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getFreshflag() {
         /* 154 */
         return this.freshflag;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setFreshflag(Integer freshflag) {
         /* 163 */
         this.freshflag = freshflag;
-        
+
     }
 }
 

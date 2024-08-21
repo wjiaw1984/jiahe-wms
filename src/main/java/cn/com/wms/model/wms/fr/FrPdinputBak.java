@@ -54,7 +54,7 @@ import java.util.Date;
 
     public int hashCode() {
         int PRIME = 59;
-        result = 1;
+        int result = 1;
         Object $freshFlag = getFreshFlag();
         result = result * 59 + (($freshFlag == null) ? 43 : $freshFlag.hashCode());
         Object $sheetid = getSheetid();

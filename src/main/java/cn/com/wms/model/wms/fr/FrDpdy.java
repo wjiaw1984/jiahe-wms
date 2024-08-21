@@ -2,12 +2,14 @@
 package cn.com.wms.model.wms.fr;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
 @TableName("FR_DPDY")
+@Data
 public class FrDpdy implements Serializable {
     private static final long serialVersionUID = -7637654609730735823L;
     private String sheetid;
@@ -50,7 +52,7 @@ public class FrDpdy implements Serializable {
 
     public int hashCode() {
         int PRIME = 59;
-        result = 1;
+        int result = 1;
         Object $sheetid = getSheetid();
         result = result * 59 + (($sheetid == null) ? 43 : $sheetid.hashCode());
         Object $palletZone = getPalletZone();

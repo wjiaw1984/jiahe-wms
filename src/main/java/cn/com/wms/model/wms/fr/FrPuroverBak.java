@@ -2,11 +2,13 @@
 package cn.com.wms.model.wms.fr;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.Serializable;
 
 
 @TableName("FR_PurOver_BAK")
+@Slf4j
 public class FrPuroverBak implements Serializable {
     private static final long serialVersionUID = 743581878893426549L;
     private String sheetid;
@@ -42,7 +44,7 @@ public class FrPuroverBak implements Serializable {
 
     public int hashCode() {
         int PRIME = 59;
-        result = 1;
+        int result = 1;
         Object $sheetid = getSheetid();
         result = result * 59 + (($sheetid == null) ? 43 : $sheetid.hashCode());
         Object $customid = getCustomid();
@@ -59,158 +61,74 @@ public class FrPuroverBak implements Serializable {
         return "FrPuroverBak(sheetid=" + getSheetid() + ", customid=" + getCustomid() + ", pursheetid=" + getPursheetid() + ", checkFlag=" + getCheckFlag() + ", freshflag=" + getFreshflag() + ")";
     }
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     public String getSheetid() {
         /*  39 */
         return this.sheetid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setSheetid(String sheetid) {
         /*  48 */
         this.sheetid = sheetid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getCustomid() {
         /*  57 */
         return this.customid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setCustomid(String customid) {
         /*  66 */
         this.customid = customid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getPursheetid() {
         /*  75 */
         return this.pursheetid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setPursheetid(String pursheetid) {
         /*  84 */
         this.pursheetid = pursheetid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getCheckFlag() {
         /*  93 */
         return this.checkFlag;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setCheckFlag(Integer checkFlag) {
         /* 102 */
         this.checkFlag = checkFlag;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getFreshflag() {
         /* 111 */
         return this.freshflag;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setFreshflag(Integer freshflag) {
         /* 120 */
         this.freshflag = freshflag;
-        
+
     }
 }
 

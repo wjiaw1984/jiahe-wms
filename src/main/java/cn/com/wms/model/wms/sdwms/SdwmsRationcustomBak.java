@@ -2,18 +2,20 @@
 package cn.com.wms.model.wms.sdwms;
 
 import com.baomidou.mybatisplus.annotation.TableName;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.Serializable;
 
 
 @TableName("SDWMS_RationCustom_BAK")
- public class SdwmsRationcustomBak implements Serializable {
+@Slf4j
+public class SdwmsRationcustomBak implements Serializable {
     private static final long serialVersionUID = -6894109744642058754L;
     private String sheetid;
-       private String customid;
-       private String guestid;
+    private String customid;
+    private String guestid;
 
-    
+
     /*   7 */
     public boolean equals(Object o) {
         if (o == this) return true;
@@ -51,7 +53,7 @@ import java.io.Serializable;
 
     public int hashCode() {
         int PRIME = 59;
-        result = 1;
+        int result = 1;
         Object $sheetid = getSheetid();
         result = result * 59 + (($sheetid == null) ? 43 : $sheetid.hashCode());
         Object $customid = getCustomid();
@@ -78,190 +80,112 @@ import java.io.Serializable;
     public String getSheetid() {
         /*  48 */
         return this.sheetid;
-        
+
     }
 
 
     public void setSheetid(String sheetid) {
         /*  57 */
         this.sheetid = sheetid;
-        
+
     }
 
 
     public String getCustomid() {
         /*  66 */
         return this.customid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setCustomid(String customid) {
         /*  75 */
         this.customid = customid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getGuestid() {
         /*  84 */
         return this.guestid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setGuestid(String guestid) {
         /*  93 */
         this.guestid = guestid;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getGuestName() {
         /* 102 */
         return this.guestName;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setGuestName(String guestName) {
         /* 111 */
         this.guestName = guestName;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getAddress() {
         /* 120 */
         return this.address;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setAddress(String address) {
         /* 129 */
         this.address = address;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getZipcode() {
         /* 138 */
         return this.zipcode;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setZipcode(String zipcode) {
         /* 147 */
         this.zipcode = zipcode;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public String getTele() {
         /* 156 */
         return this.tele;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setTele(String tele) {
         /* 165 */
         this.tele = tele;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public Integer getStatus() {
         /* 174 */
         return this.status;
-        
+
     }
 
-    
-    
-    
-    
-    
-    
-    
+
     public void setStatus(Integer status) {
         /* 183 */
         this.status = status;
-        
+
     }
 }
 
