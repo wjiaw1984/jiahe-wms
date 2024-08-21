@@ -1,4 +1,4 @@
-package BOOT-INF.classes.cn.com.wms.mybaits.service.fr;
+package cn.com.wms.mybaits.service.fr;
 
 import cn.com.wms.model.wms.fr.FrRationnoteClose;
 import com.baomidou.mybatisplus.extension.service.IService;

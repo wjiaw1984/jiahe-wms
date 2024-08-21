@@ -1,4 +1,4 @@
-package BOOT-INF.classes.com.best.javaSdk;
+package com.best.javaSdk;
 
 import com.best.javaSdk.BaseResponse;
 

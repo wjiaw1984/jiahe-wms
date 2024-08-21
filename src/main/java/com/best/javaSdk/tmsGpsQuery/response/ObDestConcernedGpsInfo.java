@@ -1,42 +1,42 @@
-/*    */ package BOOT-INF.classes.com.best.javaSdk.tmsGpsQuery.response;
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ public class ObDestConcernedGpsInfo
-/*    */ {
-/*    */   private String address;
-/*    */   private double latitude;
-/*    */   private double longitude;
-/*    */   
-/*    */   public String getAddress() {
+ package com.best.javaSdk.tmsGpsQuery.response;
+ 
+ 
+ 
+ public class ObDestConcernedGpsInfo
+ {
+   private String address;
+   private double latitude;
+   private double longitude;
+   
+   public String getAddress() {
 /* 12 */     return this.address;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setAddress(String value) {
+   }
+ 
+   
+   public void setAddress(String value) {
 /* 17 */     this.address = value;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public double getLatitude() {
+   }
+ 
+   
+   public double getLatitude() {
 /* 22 */     return this.latitude;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setLatitude(double value) {
+   }
+ 
+   
+   public void setLatitude(double value) {
 /* 27 */     this.latitude = value;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public double getLongitude() {
+   }
+ 
+   
+   public double getLongitude() {
 /* 32 */     return this.longitude;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setLongitude(double value) {
+   }
+ 
+   
+   public void setLongitude(double value) {
 /* 37 */     this.longitude = value;
-/*    */   }
-/*    */ }
+   }
+ }
 
 
 /* Location:              D:\wjw\Workspace\jiahe\wms-api.jar!\BOOT-INF\classes\com\best\javaSdk\tmsGpsQuery\response\ObDestConcernedGpsInfo.class

@@ -1,4 +1,4 @@
-package BOOT-INF.classes.cn.com.wms.common.context;
+package cn.com.wms.common.context;
 
 import cn.com.wms.common.context.SessionResource;
 import java.util.List;

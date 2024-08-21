@@ -1,4 +1,4 @@
-package BOOT-INF.classes.cn.com.wms.common.reflect;
+package cn.com.wms.common.reflect;
 
 import com.alibaba.fastjson2.JSONObject;
 

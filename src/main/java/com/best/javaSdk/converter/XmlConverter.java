@@ -1,4 +1,4 @@
-package BOOT-INF.classes.com.best.javaSdk.converter;
+package com.best.javaSdk.converter;
 
 import java.lang.reflect.Field;
 import org.w3c.dom.Node;

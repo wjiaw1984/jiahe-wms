@@ -1,31 +1,31 @@
-/*    */ package BOOT-INF.classes.com.best.javaSdk.wmsSkuInventoryExtQuery.request;
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ public class Product
-/*    */ {
-/*    */   private String itemSkuCode;
-/*    */   private String providerCode;
-/*    */   
-/*    */   public String getItemSkuCode() {
+ package com.best.javaSdk.wmsSkuInventoryExtQuery.request;
+
+
+
+ public class Product
+ {
+   private String itemSkuCode;
+   private String providerCode;
+
+   public String getItemSkuCode() {
 /* 11 */     return this.itemSkuCode;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setItemSkuCode(String value) {
+   }
+
+
+   public void setItemSkuCode(String value) {
 /* 16 */     this.itemSkuCode = value;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public String getProviderCode() {
+   }
+
+
+   public String getProviderCode() {
 /* 21 */     return this.providerCode;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setProviderCode(String value) {
+   }
+
+
+   public void setProviderCode(String value) {
 /* 26 */     this.providerCode = value;
-/*    */   }
-/*    */ }
+   }
+ }
 
 
 /* Location:              D:\wjw\Workspace\jiahe\wms-api.jar!\BOOT-INF\classes\com\best\javaSdk\wmsSkuInventoryExtQuery\request\Product.class

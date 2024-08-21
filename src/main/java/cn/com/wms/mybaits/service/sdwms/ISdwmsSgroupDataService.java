@@ -1,4 +1,4 @@
-package BOOT-INF.classes.cn.com.wms.mybaits.service.sdwms;
+package cn.com.wms.mybaits.service.sdwms;
 
 import cn.com.wms.model.wms.sdwms.SdwmsSgroup;
 import com.baomidou.mybatisplus.extension.service.IService;

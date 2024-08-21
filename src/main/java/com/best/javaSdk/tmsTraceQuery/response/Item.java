@@ -1,75 +1,75 @@
-/*    */ package BOOT-INF.classes.com.best.javaSdk.tmsTraceQuery.response;
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ public class Item
-/*    */ {
-/*    */   private String itemCode;
-/*    */   private double volume;
-/*    */   private double weight;
-/*    */   private long count;
-/*    */   private String packageUomCode;
-/*    */   private String itemName;
-/*    */   
-/*    */   public String getItemCode() {
+ package com.best.javaSdk.tmsTraceQuery.response;
+
+
+
+ public class Item
+ {
+   private String itemCode;
+   private double volume;
+   private double weight;
+   private long count;
+   private String packageUomCode;
+   private String itemName;
+
+   public String getItemCode() {
 /* 15 */     return this.itemCode;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setItemCode(String value) {
+   }
+
+
+   public void setItemCode(String value) {
 /* 20 */     this.itemCode = value;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public double getVolume() {
+   }
+
+
+   public double getVolume() {
 /* 25 */     return this.volume;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setVolume(double value) {
+   }
+
+
+   public void setVolume(double value) {
 /* 30 */     this.volume = value;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public double getWeight() {
+   }
+
+
+   public double getWeight() {
 /* 35 */     return this.weight;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setWeight(double value) {
+   }
+
+
+   public void setWeight(double value) {
 /* 40 */     this.weight = value;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public long getCount() {
+   }
+
+
+   public long getCount() {
 /* 45 */     return this.count;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setCount(long value) {
+   }
+
+
+   public void setCount(long value) {
 /* 50 */     this.count = value;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public String getPackageUomCode() {
+   }
+
+
+   public String getPackageUomCode() {
 /* 55 */     return this.packageUomCode;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setPackageUomCode(String value) {
+   }
+
+
+   public void setPackageUomCode(String value) {
 /* 60 */     this.packageUomCode = value;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public String getItemName() {
+   }
+
+
+   public String getItemName() {
 /* 65 */     return this.itemName;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setItemName(String value) {
+   }
+
+
+   public void setItemName(String value) {
 /* 70 */     this.itemName = value;
-/*    */   }
-/*    */ }
+   }
+ }
 
 
 /* Location:              D:\wjw\Workspace\jiahe\wms-api.jar!\BOOT-INF\classes\com\best\javaSdk\tmsTraceQuery\response\Item.class

@@ -1,4 +1,4 @@
-package BOOT-INF.classes.cn.com.wms.common.reflect.deserializer;
+package cn.com.wms.common.reflect.deserializer;
 
 import com.alibaba.fastjson2.JSONObject;
 

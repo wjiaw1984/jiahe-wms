@@ -1,4 +1,4 @@
-package BOOT-INF.classes.cn.com.wms.service.erp;
+package cn.com.wms.service.erp;
 
 import cn.com.wms.model.erp.ShopContact;
 

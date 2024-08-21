@@ -1,4 +1,4 @@
-package BOOT-INF.classes.cn.com.wms.mybaits.dao.wms.fr;
+package cn.com.wms.mybaits.dao.wms.fr;
 
 import cn.com.wms.model.wms.fr.FrRetBak;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;

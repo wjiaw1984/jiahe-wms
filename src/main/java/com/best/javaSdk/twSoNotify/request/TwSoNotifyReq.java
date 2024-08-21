@@ -1,4 +1,4 @@
-/*      */ package BOOT-INF.classes.com.best.javaSdk.twSoNotify.request;
+/*      */ package com.best.javaSdk.twSoNotify.request;
 /*      */ 
 /*      */ import cn.com.wms.common.utils.Convert;
 /*      */ import cn.com.wms.config.BestConfig;

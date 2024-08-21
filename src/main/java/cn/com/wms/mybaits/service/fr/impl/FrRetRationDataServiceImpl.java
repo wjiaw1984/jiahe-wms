@@ -1,4 +1,4 @@
-package BOOT-INF.classes.cn.com.wms.mybaits.service.fr.impl;
+package cn.com.wms.mybaits.service.fr.impl;
 
 import cn.com.wms.model.wms.fr.FrRetRation;
 import cn.com.wms.mybaits.dao.wms.fr.IFrRetRationDao;

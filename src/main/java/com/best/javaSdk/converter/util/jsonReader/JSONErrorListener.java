@@ -1,4 +1,4 @@
-package BOOT-INF.classes.com.best.javaSdk.converter.util.jsonReader;
+package com.best.javaSdk.converter.util.jsonReader;
 
 public interface JSONErrorListener {
   void start(String paramString);

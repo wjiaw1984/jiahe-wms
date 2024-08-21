@@ -1,4 +1,4 @@
-package BOOT-INF.classes.cn.com.wms.mybaits.dao.erp;
+package cn.com.wms.mybaits.dao.erp;
 
 import cn.com.wms.model.erp.InterfaceSheetList;
 import com.baomidou.dynamic.datasource.annotation.DS;

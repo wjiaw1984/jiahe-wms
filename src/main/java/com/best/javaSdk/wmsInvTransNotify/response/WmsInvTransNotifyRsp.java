@@ -1,54 +1,54 @@
-/*    */ package BOOT-INF.classes.com.best.javaSdk.wmsInvTransNotify.response;
-/*    */ 
-/*    */ import com.best.javaSdk.BaseResponse;
-/*    */ 
-/*    */ public class WmsInvTransNotifyRsp
-/*    */   implements BaseResponse
-/*    */ {
-/*    */   private boolean result;
-/*    */   private String note;
-/*    */   private String errorCode;
-/*    */   private String errorDescription;
-/*    */   
-/*    */   public boolean getResult() {
+ package com.best.javaSdk.wmsInvTransNotify.response;
+
+ import com.best.javaSdk.BaseResponse;
+
+ public class WmsInvTransNotifyRsp
+   implements BaseResponse
+ {
+   private boolean result;
+   private String note;
+   private String errorCode;
+   private String errorDescription;
+
+   public boolean getResult() {
 /* 14 */     return this.result;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setResult(boolean value) {
+   }
+
+
+   public void setResult(boolean value) {
 /* 19 */     this.result = value;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public String getNote() {
+   }
+
+
+   public String getNote() {
 /* 24 */     return this.note;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setNote(String value) {
+   }
+
+
+   public void setNote(String value) {
 /* 29 */     this.note = value;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public String getErrorCode() {
+   }
+
+
+   public String getErrorCode() {
 /* 34 */     return this.errorCode;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setErrorCode(String value) {
+   }
+
+
+   public void setErrorCode(String value) {
 /* 39 */     this.errorCode = value;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public String getErrorDescription() {
+   }
+
+
+   public String getErrorDescription() {
 /* 44 */     return this.errorDescription;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setErrorDescription(String value) {
+   }
+
+
+   public void setErrorDescription(String value) {
 /* 49 */     this.errorDescription = value;
-/*    */   }
-/*    */ }
+   }
+ }
 
 
 /* Location:              D:\wjw\Workspace\jiahe\wms-api.jar!\BOOT-INF\classes\com\best\javaSdk\wmsInvTransNotify\response\WmsInvTransNotifyRsp.class

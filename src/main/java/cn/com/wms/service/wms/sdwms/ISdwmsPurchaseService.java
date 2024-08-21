@@ -1,4 +1,4 @@
-package BOOT-INF.classes.cn.com.wms.service.wms.sdwms;
+package cn.com.wms.service.wms.sdwms;
 
 import cn.com.wms.model.wms.sdwms.SdwmsPurchase;
 import java.util.List;

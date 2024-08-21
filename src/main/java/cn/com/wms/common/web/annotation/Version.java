@@ -1,4 +1,4 @@
-package BOOT-INF.classes.cn.com.wms.common.web.annotation;
+package cn.com.wms.common.web.annotation;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

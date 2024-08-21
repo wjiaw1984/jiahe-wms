@@ -1,4 +1,4 @@
-/*   */ package BOOT-INF.classes.com.best.javaSdk.converter.util.jsonReader;
+/*   */ package com.best.javaSdk.converter.util.jsonReader;
 /*   */ import com.best.javaSdk.converter.util.jsonReader.BufferErrorListener;
 /*   */ 
 /*   */ public class ExceptionErrorListener extends BufferErrorListener {

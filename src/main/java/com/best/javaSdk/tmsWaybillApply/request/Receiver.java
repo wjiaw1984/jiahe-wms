@@ -1,86 +1,86 @@
-/*    */ package BOOT-INF.classes.com.best.javaSdk.tmsWaybillApply.request;
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ public class Receiver
-/*    */ {
-/*    */   private String postcode;
-/*    */   private String address;
-/*    */   private String district;
-/*    */   private String city;
-/*    */   private String province;
-/*    */   private String phone;
-/*    */   private String name;
-/*    */   
-/*    */   public String getPostcode() {
+ package com.best.javaSdk.tmsWaybillApply.request;
+
+
+
+ public class Receiver
+ {
+   private String postcode;
+   private String address;
+   private String district;
+   private String city;
+   private String province;
+   private String phone;
+   private String name;
+
+   public String getPostcode() {
 /* 16 */     return this.postcode;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setPostcode(String value) {
+   }
+
+
+   public void setPostcode(String value) {
 /* 21 */     this.postcode = value;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public String getAddress() {
+   }
+
+
+   public String getAddress() {
 /* 26 */     return this.address;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setAddress(String value) {
+   }
+
+
+   public void setAddress(String value) {
 /* 31 */     this.address = value;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public String getDistrict() {
+   }
+
+
+   public String getDistrict() {
 /* 36 */     return this.district;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setDistrict(String value) {
+   }
+
+
+   public void setDistrict(String value) {
 /* 41 */     this.district = value;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public String getCity() {
+   }
+
+
+   public String getCity() {
 /* 46 */     return this.city;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setCity(String value) {
+   }
+
+
+   public void setCity(String value) {
 /* 51 */     this.city = value;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public String getProvince() {
+   }
+
+
+   public String getProvince() {
 /* 56 */     return this.province;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setProvince(String value) {
+   }
+
+
+   public void setProvince(String value) {
 /* 61 */     this.province = value;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public String getPhone() {
+   }
+
+
+   public String getPhone() {
 /* 66 */     return this.phone;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setPhone(String value) {
+   }
+
+
+   public void setPhone(String value) {
 /* 71 */     this.phone = value;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public String getName() {
+   }
+
+
+   public String getName() {
 /* 76 */     return this.name;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setName(String value) {
+   }
+
+
+   public void setName(String value) {
 /* 81 */     this.name = value;
-/*    */   }
-/*    */ }
+   }
+ }
 
 
 /* Location:              D:\wjw\Workspace\jiahe\wms-api.jar!\BOOT-INF\classes\com\best\javaSdk\tmsWaybillApply\request\Receiver.class

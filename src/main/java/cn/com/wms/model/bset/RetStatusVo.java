@@ -1,4 +1,4 @@
-package BOOT-INF.classes.cn.com.wms.model.bset;
+package cn.com.wms.model.bset;
 
 import cn.com.wms.model.bset.ItemVo;
 import java.io.Serializable;

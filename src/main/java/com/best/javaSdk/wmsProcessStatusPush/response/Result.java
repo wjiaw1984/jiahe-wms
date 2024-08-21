@@ -1,22 +1,22 @@
-/*    */ package BOOT-INF.classes.com.best.javaSdk.wmsProcessStatusPush.response;
-/*    */ 
-/*    */ import com.best.javaSdk.wmsProcessStatusPush.response.Error;
-/*    */ import java.util.List;
-/*    */ 
-/*    */ 
-/*    */ public class Result
-/*    */ {
-/*    */   private List<Error> error;
-/*    */   
-/*    */   public List<Error> getError() {
+ package com.best.javaSdk.wmsProcessStatusPush.response;
+
+ import com.best.javaSdk.wmsProcessStatusPush.response.Error;
+ import java.util.List;
+
+
+ public class Result
+ {
+   private List<Error> error;
+
+   public List<Error> getError() {
 /* 12 */     return this.error;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setError(List<Error> value) {
+   }
+
+
+   public void setError(List<Error> value) {
 /* 17 */     this.error = value;
-/*    */   }
-/*    */ }
+   }
+ }
 
 
 /* Location:              D:\wjw\Workspace\jiahe\wms-api.jar!\BOOT-INF\classes\com\best\javaSdk\wmsProcessStatusPush\response\Result.class

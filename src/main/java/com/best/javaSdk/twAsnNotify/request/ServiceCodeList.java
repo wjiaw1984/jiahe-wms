@@ -1,22 +1,22 @@
-/*    */ package BOOT-INF.classes.com.best.javaSdk.twAsnNotify.request;
-/*    */ 
-/*    */ import com.best.javaSdk.twAsnNotify.request.ServiceCode;
-/*    */ import java.util.List;
-/*    */ 
-/*    */ 
-/*    */ public class ServiceCodeList
-/*    */ {
-/*    */   private List<ServiceCode> serviceCode;
-/*    */   
-/*    */   public List<ServiceCode> getServiceCode() {
+ package com.best.javaSdk.twAsnNotify.request;
+
+ import com.best.javaSdk.twAsnNotify.request.ServiceCode;
+ import java.util.List;
+
+
+ public class ServiceCodeList
+ {
+   private List<ServiceCode> serviceCode;
+
+   public List<ServiceCode> getServiceCode() {
 /* 12 */     return this.serviceCode;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setServiceCode(List<ServiceCode> value) {
+   }
+
+
+   public void setServiceCode(List<ServiceCode> value) {
 /* 17 */     this.serviceCode = value;
-/*    */   }
-/*    */ }
+   }
+ }
 
 
 /* Location:              D:\wjw\Workspace\jiahe\wms-api.jar!\BOOT-INF\classes\com\best\javaSdk\twAsnNotify\request\ServiceCodeList.class

@@ -1,42 +1,42 @@
-/*    */ package BOOT-INF.classes.com.best.javaSdk.twSoNotify.request;
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ public class Box
-/*    */ {
-/*    */   private String boxGaugeName;
-/*    */   private String boxGaugeCode;
-/*    */   private String boxCode;
-/*    */   
-/*    */   public String getBoxGaugeName() {
+ package com.best.javaSdk.twSoNotify.request;
+ 
+ 
+ 
+ public class Box
+ {
+   private String boxGaugeName;
+   private String boxGaugeCode;
+   private String boxCode;
+   
+   public String getBoxGaugeName() {
 /* 12 */     return this.boxGaugeName;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setBoxGaugeName(String value) {
+   }
+ 
+   
+   public void setBoxGaugeName(String value) {
 /* 17 */     this.boxGaugeName = value;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public String getBoxGaugeCode() {
+   }
+ 
+   
+   public String getBoxGaugeCode() {
 /* 22 */     return this.boxGaugeCode;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setBoxGaugeCode(String value) {
+   }
+ 
+   
+   public void setBoxGaugeCode(String value) {
 /* 27 */     this.boxGaugeCode = value;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public String getBoxCode() {
+   }
+ 
+   
+   public String getBoxCode() {
 /* 32 */     return this.boxCode;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setBoxCode(String value) {
+   }
+ 
+   
+   public void setBoxCode(String value) {
 /* 37 */     this.boxCode = value;
-/*    */   }
-/*    */ }
+   }
+ }
 
 
 /* Location:              D:\wjw\Workspace\jiahe\wms-api.jar!\BOOT-INF\classes\com\best\javaSdk\twSoNotify\request\Box.class

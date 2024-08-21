@@ -1,4 +1,4 @@
-package BOOT-INF.classes.cn.com.wms.common.web.serializer;
+package cn.com.wms.common.web.serializer;
 
 import cn.com.wms.model.bset.ResponseVo;
 

@@ -1,4 +1,4 @@
-package BOOT-INF.classes.cn.com.wms.service;
+package cn.com.wms.service;
 
 public interface ISendHTTPTarget {}
 

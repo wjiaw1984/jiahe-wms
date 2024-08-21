@@ -1,31 +1,31 @@
-/*    */ package BOOT-INF.classes.com.best.javaSdk.twSoNotify.request;
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ public class ReferenceReq
-/*    */ {
-/*    */   private String outorderType;
-/*    */   private String outorderValue;
-/*    */   
-/*    */   public String getOutorderType() {
+ package com.best.javaSdk.twSoNotify.request;
+
+
+
+ public class ReferenceReq
+ {
+   private String outorderType;
+   private String outorderValue;
+
+   public String getOutorderType() {
 /* 11 */     return this.outorderType;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setOutorderType(String value) {
+   }
+
+
+   public void setOutorderType(String value) {
 /* 16 */     this.outorderType = value;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public String getOutorderValue() {
+   }
+
+
+   public String getOutorderValue() {
 /* 21 */     return this.outorderValue;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setOutorderValue(String value) {
+   }
+
+
+   public void setOutorderValue(String value) {
 /* 26 */     this.outorderValue = value;
-/*    */   }
-/*    */ }
+   }
+ }
 
 
 /* Location:              D:\wjw\Workspace\jiahe\wms-api.jar!\BOOT-INF\classes\com\best\javaSdk\twSoNotify\request\ReferenceReq.class

@@ -1,31 +1,31 @@
-/*    */ package BOOT-INF.classes.com.best.javaSdk.tmsWaybillApply.response;
-/*    */ 
-/*    */ 
-/*    */ 
-/*    */ public class Error
-/*    */ {
-/*    */   private String errorDescription;
-/*    */   private String errorCode;
-/*    */   
-/*    */   public String getErrorDescription() {
+ package com.best.javaSdk.tmsWaybillApply.response;
+ 
+ 
+ 
+ public class Error
+ {
+   private String errorDescription;
+   private String errorCode;
+   
+   public String getErrorDescription() {
 /* 11 */     return this.errorDescription;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setErrorDescription(String value) {
+   }
+ 
+   
+   public void setErrorDescription(String value) {
 /* 16 */     this.errorDescription = value;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public String getErrorCode() {
+   }
+ 
+   
+   public String getErrorCode() {
 /* 21 */     return this.errorCode;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setErrorCode(String value) {
+   }
+ 
+   
+   public void setErrorCode(String value) {
 /* 26 */     this.errorCode = value;
-/*    */   }
-/*    */ }
+   }
+ }
 
 
 /* Location:              D:\wjw\Workspace\jiahe\wms-api.jar!\BOOT-INF\classes\com\best\javaSdk\tmsWaybillApply\response\Error.class

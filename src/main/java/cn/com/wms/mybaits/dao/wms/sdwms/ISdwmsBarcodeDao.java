@@ -1,4 +1,4 @@
-package BOOT-INF.classes.cn.com.wms.mybaits.dao.wms.sdwms;
+package cn.com.wms.mybaits.dao.wms.sdwms;
 
 import cn.com.wms.model.wms.sdwms.SdwmsBarcode;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;

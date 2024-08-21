@@ -1,4 +1,4 @@
-package BOOT-INF.classes.cn.com.wms.mybaits.service.erp;
+package cn.com.wms.mybaits.service.erp;
 
 import cn.com.wms.model.erp.InterfaceSheetList;
 import com.baomidou.mybatisplus.extension.service.IService;

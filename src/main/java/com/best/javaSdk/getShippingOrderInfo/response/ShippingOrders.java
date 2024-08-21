@@ -1,22 +1,22 @@
-/*    */ package BOOT-INF.classes.com.best.javaSdk.getShippingOrderInfo.response;
-/*    */ 
-/*    */ import com.best.javaSdk.getShippingOrderInfo.response.ShippingOrder;
-/*    */ import java.util.List;
-/*    */ 
-/*    */ 
-/*    */ public class ShippingOrders
-/*    */ {
-/*    */   private List<ShippingOrder> shippingOrder;
-/*    */   
-/*    */   public List<ShippingOrder> getShippingOrder() {
+ package com.best.javaSdk.getShippingOrderInfo.response;
+ 
+ import com.best.javaSdk.getShippingOrderInfo.response.ShippingOrder;
+ import java.util.List;
+ 
+ 
+ public class ShippingOrders
+ {
+   private List<ShippingOrder> shippingOrder;
+   
+   public List<ShippingOrder> getShippingOrder() {
 /* 12 */     return this.shippingOrder;
-/*    */   }
-/*    */ 
-/*    */   
-/*    */   public void setShippingOrder(List<ShippingOrder> value) {
+   }
+ 
+   
+   public void setShippingOrder(List<ShippingOrder> value) {
 /* 17 */     this.shippingOrder = value;
-/*    */   }
-/*    */ }
+   }
+ }
 
 
 /* Location:              D:\wjw\Workspace\jiahe\wms-api.jar!\BOOT-INF\classes\com\best\javaSdk\getShippingOrderInfo\response\ShippingOrders.class

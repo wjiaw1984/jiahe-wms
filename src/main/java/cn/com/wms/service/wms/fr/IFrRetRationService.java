@@ -1,4 +1,4 @@
-package BOOT-INF.classes.cn.com.wms.service.wms.fr;
+package cn.com.wms.service.wms.fr;
 
 import cn.com.wms.model.wms.fr.FrRetRation;
 import com.best.javaSdk.wmsrmastatuspush.request.WmsRmaStatusPushReq;

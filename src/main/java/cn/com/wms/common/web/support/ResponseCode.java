@@ -1,4 +1,4 @@
-package BOOT-INF.classes.cn.com.wms.common.web.support;
+package cn.com.wms.common.web.support;
 
 public interface ResponseCode {
   public static final String SUCCESS = "0";

@@ -1,4 +1,4 @@
-package BOOT-INF.classes.cn.com.wms.common.session;
+package cn.com.wms.common.session;
 
 import cn.com.wms.common.context.SessionContext;
 
