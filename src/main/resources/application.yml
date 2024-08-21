@@ -1,0 +1,118 @@
+spring:
+  http:
+    encoding:
+      charset: utf-8
+      force: true
+      enabled: true
+  application:
+    name: jw-wms
+  datasource:
+    dynamic:
+      primary: master #设置默认的数据源或者数据源组,默认值即为master
+      strict: false #严格匹配数据源,默认false. true未匹配到指定数据源时抛异常,false使用默认数据源
+      datasource:
+        master:
+          type: com.alibaba.druid.pool.DruidDataSource
+          url: jdbc:sqlserver://192.168.110.254:1433;DatabaseName=interfacewmsdb
+          username: sa
+          password: wu198421
+          driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+        slave_1:
+          type: com.alibaba.druid.pool.DruidDataSource
+          url: jdbc:sqlserver://192.168.110.254:1433;DatabaseName=myshopdcstock
+          username: sa
+          password: wu198421
+          driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+      # 初始连接数
+      initial-size: 5
+      # 最大激活数
+      max-active: 100
+      # 是否启用非公平锁
+      use-unfair-lock: true
+      # 启动监听、日志、防注入的功能
+      filters: stat,slf4j,wall
+      # 验证的sql语句
+      validation-query: select 1
+      # 验证超时
+      validation-query-timeout: 3000
+      # 连接时是否开启验证
+      test-on-borrow: true
+      # 退还连接时是否开启验证
+      test-on-return: false
+      # 建议配置为true，不影响性能，并且保证安全性
+      test-while-idle: true
+      # Destroy线程会检测连接的间隔时间 || testWhileIdle的判断依据
+      time-between-eviction-runs-millis: 5000
+      #指定一个空闲连接最少空闲多久后可被清除
+      min-evictable-idle-time-millis: 30000
+
+mybatis-plus:
+  #mapper-locations: classpath*:/mapper/**/*.xml;
+  configuration:
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+    #log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    #sql执行超时时间,单位s
+    default-statement-timeout: 25
+    map-underscore-to-camel-case: false
+  custom:
+    #分页返回最大数量
+    page-max-limit: 500
+
+
+jetcache:
+  # 统计间隔，默认0：表示不统计
+  statIntervalMinutes: 1
+  # areaName是否作为缓存key前缀，默认True
+  areaInCacheName: false
+  local:
+    default:
+      # 已支持可选：linkedhashmap、caffeine
+      type: linkedhashmap
+      # key转换器的全局配置，当前只有：fastjson, @see com.alicp.jetcache.support.FastjsonKeyConvertor
+      keyConvertor: fastjson
+      # 每个缓存实例的最大元素的全局配置，仅local类型的缓存需要指定
+      limit: 100
+      # jetcache2.2以上，以毫秒为单位，指定多长时间没有访问，就让缓存失效，当前只有本地缓存支持。0表示不使用这个功能
+      expireAfterAccessInMillis: 30000
+#  remote:
+#    default:
+#      # 已支持可选：redis、tair
+#      type: redis.lettuce
+#      # 连接格式@see：https://github.com/lettuce-io/lettuce-core/wiki/Redis-URI-and-connection-details
+#      uri: redis://localhost:6379/1?timeout=5s
+#      keyConvertor: fastjson
+#      # 序列化器的全局配置。仅remote类型的缓存需要指定，可选java和kryo
+#      valueEncoder: java
+#      valueDecoder: java
+#      # 以毫秒为单位指定超时时间的全局配置
+#      expireAfterWriteInMillis: 5000
+
+
+
+server:
+  #当前服务端口号
+  port: 9765
+  http:
+    encoding:
+      charset: utf-8
+      force: true
+      enabled: true
+  tomcat:
+    uri-encoding: UTF-8
+  #    max-http-header-size: 1073741824
+
+best:
+  #交互地址
+  url: http://ectest.800best.com/ecapi/api/process
+  #伙伴ID
+  partnerId: JHCS-TEST
+  #密钥
+  partnerKey: 123456
+  #客户编码
+  customerCode: JHCS001
+  #供应商代码
+  providerCode: JHCS001
+  #仓库编码
+  warehouseCode: EC_XM_WH
+  #消费格式
+  messageFormat: JSON
