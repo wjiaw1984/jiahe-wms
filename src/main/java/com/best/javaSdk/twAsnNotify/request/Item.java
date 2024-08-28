@@ -517,8 +517,9 @@ public class Item {
         result.setItemSkuCode(purchase.getGoodsid());
         result.setItemName(purchase.getGoodsName());
 
-
-        result.setItemQuantity(purchase.getQty().setScale(0, RoundingMode.HALF_UP).intValue());
+        //改小数处理
+        //result.setItemQuantity(purchase.getQty().setScale(0, RoundingMode.HALF_UP).intValue());
+        result.setDecimalQuantity(purchase.getQty().doubleValue());
         return result;
     }
 
@@ -531,7 +532,9 @@ public class Item {
         result.setLineNo(lineNo.intValue());
         result.setItemSkuCode(retration.getGoodsid());
         result.setItemName(retration.getGoodsName());
-        result.setItemQuantity(retration.getPlanQty().setScale(0, RoundingMode.HALF_UP).intValue());
+        //改小数处理
+        //result.setItemQuantity(retration.getPlanQty().setScale(0, RoundingMode.HALF_UP).intValue());
+        result.setDecimalQuantity(retration.getPlanQty().doubleValue());
         return result;
     }
 
@@ -544,7 +547,9 @@ public class Item {
         result.setLineNo(lineNo.intValue());
         result.setItemSkuCode(ret.getGoodsid());
         result.setItemName(ret.getGoodsName());
-        result.setItemQuantity(ret.getPlanqty().setScale(0, RoundingMode.HALF_UP).intValue());
+        //改小数处理
+        //result.setItemQuantity(ret.getPlanqty().setScale(0, RoundingMode.HALF_UP).intValue());
+        result.setDecimalQuantity(ret.getPlanqty().doubleValue());
         return result;
     }
 }
