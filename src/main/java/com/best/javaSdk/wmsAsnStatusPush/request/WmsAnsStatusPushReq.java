@@ -214,12 +214,6 @@ public class WmsAnsStatusPushReq implements BaseRequest {
 
         }
 
-
-
-
-
-
-
         /*  66 */
         if (!getAsnStatus().equalsIgnoreCase("FULFILLED")) {
             /*  67 */
@@ -269,10 +263,48 @@ public class WmsAnsStatusPushReq implements BaseRequest {
             entity.setOrerqty(product.getItemQuantity());
 
             /*  97 */
-            entity.setQty(product.getNormalQuantity());
+            //良品数量逻辑
+            if ((product.getNormalQuantity() != null && product.getDecimalNormalQty() == null)
+                    || (product.getNormalQuantity() != null && product.getDecimalNormalQty() != null
+                    && product.getNormalQuantity().compareTo(BigDecimal.ZERO) > 0)
+            ) {
+                entity.setQty(product.getNormalQuantity());
+            }
+
+            if ((product.getNormalQuantity() == null && product.getDecimalNormalQty() != null)
+                    || (product.getNormalQuantity() != null && product.getDecimalNormalQty() != null
+                    && product.getDecimalNormalQty().compareTo(BigDecimal.ZERO) > 0)
+            ) {
+                entity.setQty(product.getDecimalNormalQty());
+            }
+
+            if ((product.getNormalQuantity() == null && product.getDecimalNormalQty() == null)
+                    || (product.getNormalQuantity().compareTo(BigDecimal.ZERO) == 0 && product.getDecimalNormalQty().compareTo(BigDecimal.ZERO) == 0)
+            ){
+                entity.setQty(BigDecimal.ZERO);
+            }
 
             /*  99 */
-            entity.setBadQty(product.getDefectiveQuantity());
+            //不良品数量逻辑
+            if ((product.getDefectiveQuantity() != null && product.getDecimalDefectiveQty() == null)
+                    || (product.getDefectiveQuantity() != null && product.getDecimalDefectiveQty() != null
+                    && product.getDefectiveQuantity().compareTo(BigDecimal.ZERO) > 0)
+            ) {
+                entity.setBadQty(product.getDefectiveQuantity());
+            }
+
+            if ((product.getDefectiveQuantity() == null && product.getDecimalDefectiveQty() != null)
+                    || (product.getDefectiveQuantity() != null && product.getDecimalDefectiveQty() != null
+                    && product.getDecimalDefectiveQty().compareTo(BigDecimal.ZERO) > 0)
+            ) {
+                entity.setBadQty(product.getDecimalDefectiveQty());
+            }
+
+            if ((product.getDefectiveQuantity() == null && product.getDecimalDefectiveQty() == null)
+                    || (product.getDefectiveQuantity().compareTo(BigDecimal.ZERO) == 0 && product.getDecimalDefectiveQty().compareTo(BigDecimal.ZERO) == 0)
+            ){
+                entity.setBadQty(BigDecimal.ZERO);
+            }
 
             /* 101 */
             result.add(entity);
@@ -293,10 +325,6 @@ public class WmsAnsStatusPushReq implements BaseRequest {
             return null;
 
         }
-
-
-
-
 
         /* 117 */
         if (!getAsnStatus().equalsIgnoreCase("FULFILLED")) {
@@ -333,7 +361,9 @@ public class WmsAnsStatusPushReq implements BaseRequest {
             entity.setGoodsid(product.getItemSkuCode());
             /* 136 */
             entity.setLotno(Integer.valueOf(-1));
+
             /* 137 */
+            //良品数量逻辑
             if ((product.getNormalQuantity() != null && product.getDecimalNormalQty() == null)
                     || (product.getNormalQuantity() != null && product.getDecimalNormalQty() != null
                     && product.getNormalQuantity().compareTo(BigDecimal.ZERO) > 0)
@@ -355,6 +385,7 @@ public class WmsAnsStatusPushReq implements BaseRequest {
             }
 
             /* 138 */
+            //不良品数量逻辑
             if ((product.getDefectiveQuantity() != null && product.getDecimalDefectiveQty() == null)
                     || (product.getDefectiveQuantity() != null && product.getDecimalDefectiveQty() != null
                     && product.getDefectiveQuantity().compareTo(BigDecimal.ZERO) > 0)
