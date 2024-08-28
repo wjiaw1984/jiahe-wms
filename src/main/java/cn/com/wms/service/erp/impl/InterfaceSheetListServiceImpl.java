@@ -78,7 +78,6 @@ import com.alibaba.fastjson2.JSONObject;
     
     
     public void sendGoods() {
-        /*  64 */
         List<InterfaceSheetList> list = this.dataService.listGoods();
         
         /*  66 */

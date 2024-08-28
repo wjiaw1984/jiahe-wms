@@ -209,15 +209,15 @@ AS BEGIN
     begin
       exec @Err =Tl_getnewsheetid 33333,@NewSheetID output; --获得传输单据号
       if @sheetType=1001 
-       update InterfaceSheetList0
-       set    ExecuteFlag = 1
-       from InterfaceSheetList0 a
-       where  SheetType = @SheetType and InterfaceSystem = @InterfaceSystem and exists(select 1 from Cost where
-       GoodsID=a.SheetID) and exists(select 1 from GoodsShop where GoodsID=a.SheetID)
-     else
-       update InterfaceSheetList0
-      set    ExecuteFlag = 1
-      where  SheetType = @SheetType and InterfaceSystem = @InterfaceSystem;
+        update InterfaceSheetList0
+        set    ExecuteFlag = 1
+        from InterfaceSheetList0 a
+        where  SheetType = @SheetType and InterfaceSystem = @InterfaceSystem and exists(select 1 from Cost where
+          GoodsID=a.SheetID) and exists(select 1 from GoodsShop where GoodsID=a.SheetID)
+      else
+        update InterfaceSheetList0
+         set    ExecuteFlag = 1
+        where  SheetType = @SheetType and InterfaceSystem = @InterfaceSystem;
     end;
 
   --gzt 基础资料共用变量

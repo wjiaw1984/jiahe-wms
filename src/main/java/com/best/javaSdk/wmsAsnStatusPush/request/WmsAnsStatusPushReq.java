@@ -11,6 +11,7 @@ import com.best.javaSdk.wmsAsnStatusPush.request.Product;
 import com.best.javaSdk.wmsAsnStatusPush.request.Products;
 import com.best.javaSdk.wmsAsnStatusPush.response.WmsAnsStatusPushRsp;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -333,9 +334,46 @@ public class WmsAnsStatusPushReq implements BaseRequest {
             /* 136 */
             entity.setLotno(Integer.valueOf(-1));
             /* 137 */
-            entity.setRealQty(product.getNormalQuantity());
+            if ((product.getNormalQuantity() != null && product.getDecimalNormalQty() == null)
+                    || (product.getNormalQuantity() != null && product.getDecimalNormalQty() != null
+                    && product.getNormalQuantity().compareTo(BigDecimal.ZERO) > 0)
+            ) {
+                entity.setRealQty(product.getNormalQuantity());
+            }
+
+            if ((product.getNormalQuantity() == null && product.getDecimalNormalQty() != null)
+                    || (product.getNormalQuantity() != null && product.getDecimalNormalQty() != null
+                    && product.getDecimalNormalQty().compareTo(BigDecimal.ZERO) > 0)
+            ) {
+                entity.setRealQty(product.getDecimalNormalQty());
+            }
+
+            if ((product.getNormalQuantity() == null && product.getDecimalNormalQty() == null)
+                    || (product.getNormalQuantity().compareTo(BigDecimal.ZERO) == 0 && product.getDecimalNormalQty().compareTo(BigDecimal.ZERO) == 0)
+            ){
+                entity.setRealQty(BigDecimal.ZERO);
+            }
+
             /* 138 */
-            entity.setBadQty(product.getDefectiveQuantity());
+            if ((product.getDefectiveQuantity() != null && product.getDecimalDefectiveQty() == null)
+                    || (product.getDefectiveQuantity() != null && product.getDecimalDefectiveQty() != null
+                    && product.getDefectiveQuantity().compareTo(BigDecimal.ZERO) > 0)
+            ) {
+                entity.setBadQty(product.getDefectiveQuantity());
+            }
+
+            if ((product.getDefectiveQuantity() == null && product.getDecimalDefectiveQty() != null)
+                    || (product.getDefectiveQuantity() != null && product.getDecimalDefectiveQty() != null
+                    && product.getDecimalDefectiveQty().compareTo(BigDecimal.ZERO) > 0)
+            ) {
+                entity.setBadQty(product.getDecimalDefectiveQty());
+            }
+
+            if ((product.getDefectiveQuantity() == null && product.getDecimalDefectiveQty() == null)
+                    || (product.getDefectiveQuantity().compareTo(BigDecimal.ZERO) == 0 && product.getDecimalDefectiveQty().compareTo(BigDecimal.ZERO) == 0)
+            ){
+                entity.setBadQty(BigDecimal.ZERO);
+            }
             /* 139 */
             result.add(entity);
 

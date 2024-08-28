@@ -80,7 +80,7 @@ Begin
           	update InterfaceSheetList0 set ExecuteFlag=0  
      		where SheetID=@SheetID and SheetType=@SheetType and InterfaceSystem=@InterfaceSystem;  
 
-   		select @StartWork = 0;  
+   		    select @StartWork = 0;  
           	select @Err=0;  
           	Continue;  
         end;  
@@ -88,8 +88,8 @@ Begin
 	--接口数据转移  
 	select @BreakPoint = 9721030;  
     if @SheetType<>1001
- 	update InterfaceSheetList0 set ExecuteFlag=1  
- 	where SheetID=@SheetID and SheetType=@SheetType and InterfaceSystem=@InterfaceSystem;  
+ 	    update InterfaceSheetList0 set ExecuteFlag=1  
+ 	    where SheetID=@SheetID and SheetType=@SheetType and InterfaceSystem=@InterfaceSystem;  
   
         select @Err = @@error;                                                                                                                                                                                                                                 
                                                                                                                                                                                                                                                                
@@ -101,7 +101,7 @@ Begin
           	update InterfaceSheetList0 set ExecuteFlag=0  
      		where SheetID=@SheetID and SheetType=@SheetType and InterfaceSystem=@InterfaceSystem;  
 
-   		select @StartWork = 0;  
+   		    select @StartWork = 0;  
           	select @Err=0;  
           	Continue;  
         end;      

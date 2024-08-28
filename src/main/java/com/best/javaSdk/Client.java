@@ -70,11 +70,11 @@ import lombok.extern.slf4j.Slf4j;
             /* 41 */
             response = HttpService.sendPost(this.url, params, headers);
             /* 42 */
-            log.info("访问远程服务【%s】返回信息:%s", this.url, response);
+            log.info(String.format("访问远程服务【%s】返回信息:%s", this.url, response));
             /* 43 */
         } catch (Exception e) {
             /* 44 */
-            log.error("访问远程服务【%s】发生错误:%s", this.url, e.getMessage());
+            log.error(String.format("访问远程服务【%s】发生错误:%s", this.url, e.getMessage()));
             /* 45 */
             e.printStackTrace();
             
